@@ -11,7 +11,7 @@ import Education from "./components/Education";
 function App() {
   return (
     <>
-    <BrowserRouter  basename="/index.html">
+    <BrowserRouter  basename="/">
     
     <Router>
       <Navbar />
