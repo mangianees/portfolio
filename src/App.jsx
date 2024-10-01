@@ -11,10 +11,9 @@ import Education from "./components/Education";
 function App() {
   return (
     <>
-    <BrowserRouter  basename="/index.html">
-    <Router>
       <Navbar />
       <div className="content">
+    <BrowserRouter  basename="/index.html">
         <Routes>
           <Route path="/resume/" element={<Home />} />
           <Route path="/resume/about" element={<About />} />
@@ -23,10 +22,10 @@ function App() {
           <Route path="/resume/interests" element={<Interests />} />
           <Route path="/resume/education" element={<Education />} />
         </Routes>
-      </div>
-    </Router>
-  
     </BrowserRouter>
+      </div>
+    
+  
     </>
   );
 }
