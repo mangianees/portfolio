@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -10,6 +10,9 @@ import Education from "./components/Education";
 
 function App() {
   return (
+    <>
+    <BrowserRouter  basename="/index.html">
+    <switch>
     <Router>
       <Navbar />
       <div className="content">
@@ -23,6 +26,9 @@ function App() {
         </Routes>
       </div>
     </Router>
+  </Switch>
+    </BrowserRouter>
+    </>
   );
 }
 
