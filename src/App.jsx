@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -13,7 +13,7 @@ function App() {
     <>
       <Navbar />
       <div className="content">
-    <BrowserRouter  basename="/index.html">
+    <HashRouter>
         <Routes>
           <Route path="/resume/" element={<Home />} />
           <Route path="/resume/about" element={<About />} />
@@ -22,7 +22,7 @@ function App() {
           <Route path="/resume/interests" element={<Interests />} />
           <Route path="/resume/education" element={<Education />} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
       </div>
     
   
