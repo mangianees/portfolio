@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <BrowserRouter  basename="/index.html">
-    <switch>
+    
     <Router>
       <Navbar />
       <div className="content">
@@ -26,7 +26,7 @@ function App() {
         </Routes>
       </div>
     </Router>
-  </Switch>
+  
     </BrowserRouter>
     </>
   );
